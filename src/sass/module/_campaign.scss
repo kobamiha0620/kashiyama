@@ -1,0 +1,592 @@
+@use "./variable"as var;
+@keyframes fadeInAnime{
+    0% {
+        opacity: 0;
+        animation-fill-mode: none;
+
+    }
+
+    100% {
+        opacity: 1;
+        animation-fill-mode: none;
+
+    }
+}
+
+.limited{
+    background-color: var.$bc;
+    position: relative;
+    padding: 186px 0 126px;
+    &__ttl{
+        @include var.bg;
+        background-image: url(var.$imgpath + 'img_campaign02.svg');
+
+    }
+    .tamimoon__subttl{
+        color: var.$blue;
+        br{
+            display: none;
+        }
+    }
+    &__note{
+        text-align: right;
+        @include var.fz(12);
+        margin: 10px 0 0;
+    }
+    &__blc{
+        background-color: #FFF;
+        margin-top: 57px;
+        padding: 32px 30px 10px;
+        &--flx{
+            overflow: hidden;
+        }
+        &--small{
+            width: 280px;
+            &.left{
+                width: 306px;
+                float: left;
+            }
+            &.right{
+                width: 246px;
+                float: right;
+            }
+        }
+        &--oubo{
+            color: var.$bc;
+            @include var.fz(18);
+            background: var.$blue;
+            text-align: center;
+            border-radius: 30px;
+            padding: 8px 0;
+            line-height: 1;
+            &.mt{
+                margin-top: 44px;
+            }
+        }
+        &--txt{
+            @include var.fz(15);
+            line-height: 1.5;
+            color: var.$blue;
+            margin: 12px 0 22px;
+        }
+        &--txt2{
+            &wrap{
+                padding-left: 1em;
+                margin: 12px 0 22px;
+
+            }
+            text-indent: -0.6em;
+            padding-left: 0.6em;
+            @include var.fz(15);
+            line-height: 1.5;
+            color: var.$blue;
+        }
+    }
+    @media screen and (max-width: var.$spbp) {
+        padding: 32vw 0 18vw;
+
+        .tamimoon__subttl{
+            br{
+                display: block;
+            }
+        }
+        &__note{
+            text-align: right;
+            @include var.fz(12);
+            margin: 10px 0 0;
+        }
+        &__blc{
+            margin-top: 10vw;
+            padding: 7vw 7vw 1px;
+
+            &--small{
+                width: 100%;
+                &.left{
+                    width: 100%;;
+                    float: none;
+                }
+                &.right{
+                    width: 100%;;
+                    float: none;
+                }
+            }
+            &--oubo{
+                @include var.fz(14);
+                padding: 3px 0;
+                &.mt{
+                    margin-top: auto;
+                }
+            }
+            &--txt{
+                @include var.fz(12);
+                line-height: 1.5;
+                color: var.$blue;
+                margin: 10px 0 18px;
+            }
+            &--txt2{
+                &wrap{
+                    padding-left: 1em;
+                    margin: 10px 0 18px;
+    
+                }
+
+                
+                @include var.fz(12);
+
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: var.$spbp) {
+    .limited{
+        .limited__blc--oubo{
+            width: 132px;
+        }
+    }
+    
+}
+
+
+
+.oubobtn{
+    text-align: center;
+    line-height: 1;
+    margin-top: 6px;
+    a{
+        background-color: var.$yel;
+        text-align: center;
+        color: var.$blue;
+        @include var.fz(18);
+        text-decoration: none;
+        display: block;
+        border: solid 2px  var.$yel;
+        padding: 14px 0;
+        white-space: nowrap;
+        transition: 0.3s;
+        width: 296px;
+
+        margin:  0 auto;
+        &:hover{
+            transition: 0.3s;
+            background-color: #FFF;
+        }
+    }
+
+    @media screen and (max-width: var.$spbp) {
+        margin-top: 6px;
+        a{
+            width: 100%;
+            @include var.fz(14);
+            padding: 12px 0;
+    
+            &:hover{
+                background-color: var.$yel;
+            }
+        }
+    
+    }
+
+}
+
+
+.package{
+    position: relative;
+    background-color: #FFF;
+    padding: 186px 0 126px;
+    &__ttl{
+        @include var.bg;
+        background-image: url(var.$imgpath + 'img_campaign03.svg');
+
+    }
+    &__img{
+        margin: 28px auto 18px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__fukidashi{
+        background: url(var.$imgpath + 'campaign03_fukidashi-pc.svg') no-repeat 0 0;
+        background-size: 100% auto;
+        border-bottom: solid 1px var.$blue;
+        padding: 55px 0 25px;
+        &--txt{
+            @include var.fz(16);
+            line-height: 1.5;
+            color: var.$blue;
+        }
+    }
+    &__btns{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 18px 0 47px;
+        li{
+            width: 310px;
+            min-width: 310px;
+            a.site{
+                white-space: nowrap;
+                text-indent: -9999px;
+                background-size: 100% auto;
+                width: 100%;
+                background: url(var.$imgpath + 'btn_campaign03-a.png') no-repeat 0 0;
+                background-size: 100% auto;
+                transition: .3s;
+                display: block;
+                width: 310px;
+                height: 56px;
+                &:hover{
+                    background: url(var.$imgpath + 'btn_campaign03-ahover.png') no-repeat 0 0;
+                    transition: .3s;
+                    background-size: 100% auto;
+
+                }
+            }
+            a.closet{
+                white-space: nowrap;
+                text-indent: -9999px;
+                background-size: 100% auto;
+                width: 100%;
+                background: url(var.$imgpath + 'btn_campaign03-b.png') no-repeat 0 0;
+                background-size: 100% auto;
+                transition: .3s;
+                display: block;
+                width: 310px;
+                height: 56px;
+                &:hover{
+                    background: url(var.$imgpath + 'btn_campaign03-bhover.png') no-repeat 0 0;
+                    transition: .3s;
+                    background-size: 100% auto;
+
+                }
+            }
+        }
+    }
+    &__tshirt{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        
+        justify-content: space-between;
+        li{
+            width: 200px;
+            max-width: 200px;
+            min-width: 200px;
+            font-size: 0;
+            margin: 0 0 20px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &__details{
+        border: solid 1px #AFB8C5;
+        padding: 22px 20px 9px;
+        display: inline-block;
+        float: right;
+        &--wrap{
+            overflow: hidden;
+            display: block;
+        }
+        &--txt{
+            @include var.fz(16);
+            line-height: 1.4;
+            margin: 0 0 13px;
+            color: var.$blue;
+        }
+        &--txt2{
+            @include var.fz(14);
+            line-height: 1.4;
+            margin: 0 0 13px;
+            color: var.$blue;
+            padding-left: 14px;
+            text-indent: -14px;
+            span{
+                @include var.fz(12);
+            }
+        }
+    }
+    @media screen and (max-width: var.$spbp) {
+        padding: 32vw 0 18vw;
+
+        &__img{
+            margin: 28px -15px 0 -25px;
+        }
+        &__fukidashi{
+            margin-top: 18px;
+            background: url(var.$imgpath + 'campaign03_fukidashi-sp.svg') no-repeat 0 0;
+            background-size: 100% auto;
+            border-bottom: solid 1.3px var.$blue;
+            padding: 34px 0 14px;
+            &--txt{
+                @include var.fz(14);
+            }
+        }
+        &__btns{
+            display: block;
+            margin: 18px 0 40px;
+            li{
+                width: 100%;
+                min-width: 100%;
+                a.site{
+
+                    width: 100%;
+                    background: url(var.$imgpath + 'btn_campaign03-a-sp.png') no-repeat 0 0;
+                    background-size: 100% auto;
+                    transition: .3s;
+                    display: block;
+                    width: 100%;
+                    height: 0;
+                    padding-top: 15%;
+                    &:hover{
+                        background: url(var.$imgpath + 'btn_campaign03-a-sp.png') no-repeat 0 0;
+                        transition: .3s;
+                        background-size: 100% auto;
+    
+                    }
+                }
+                a.closet{
+                    margin-top: 10px;
+                    width: 100%;
+                    background: url(var.$imgpath + 'btn_campaign03-b-sp.png') no-repeat 0 0;
+                    background-size: 100% auto;
+                    height: 0;
+                    padding-top: 19%;
+                    &:hover{
+                        background: url(var.$imgpath + 'btn_campaign03-b-sp.png') no-repeat 0 0;
+    
+                    }
+                }
+            }
+        }
+        &__tshirt{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            
+            justify-content: space-between;
+            li{
+                width: 48%;
+                max-width: 48%;
+                min-width: 48%;
+                font-size: 0;
+                margin: 0 0 3.8vw;
+
+            }
+        }
+        &__details{
+            padding: 22px 20px 9px;
+            display: inline-block;
+            float: none;
+            width: 100%;
+
+
+        }
+    }
+}
+
+
+.popup{
+    position: relative;
+    background-color: var.$bc;
+    padding: 186px 0 126px;
+    &__ttl{
+        @include var.bg;
+        background-image: url(var.$imgpath + 'img_campaign04.svg');
+    }
+
+    &__img{
+        max-width: 640px;
+        margin:  53px auto 0;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__txt{
+        margin: 16px 0 0;
+        @include var.fz(16);
+        text-align: center;
+        line-height: 1.5;
+        color: var.$blue;
+    }
+    &__blc{
+        background-color: #FFF;
+        margin-top: 57px;
+        padding: 32px 30px 10px;
+        &--flx{
+            overflow: hidden;
+        }
+        &--small{
+            width: 280px;
+            &in{
+                margin: 0 0 46px;
+            }
+            &.left{
+                float: left;
+            }
+            &.right{
+                float: right;
+            }
+        }
+        &--oubo{
+            color: var.$bc;
+            @include var.fz(18);
+            background: var.$blue;
+            text-align: center;
+            border-radius: 30px;
+            padding: 4px 0;
+            line-height: 1;
+        }
+        &--txt{
+            @include var.fz(16);
+            line-height: 1.5;
+            color: var.$blue;
+            margin: 12px 0 22px;
+            a{
+                color: var.$blue;
+                @include var.fz(16);
+
+            }
+        }
+        &--txt2{
+            &wrap{
+                padding-left: 1em;
+                margin: 12px 0 22px;
+
+            }
+            text-indent: -0.6em;
+            padding-left: 0.6em;
+            @include var.fz(15);
+            line-height: 1.5;
+            color: var.$blue;
+        }
+    }
+    @media screen and (max-width: var.$spbp) {
+        padding: 32vw 0 18vw;
+        &__img{
+            max-width: 100%;
+            margin: 16vw auto 0;
+        }
+        &__txt{
+            margin: 10vw 0 0;
+            @include var.fz(14);
+            text-align: left;
+            line-height: 1.5;
+        }
+        &__blc{
+            margin-top: 10vw;
+            padding: 0 7vw 5vw;
+            &--flx{
+                overflow: hidden;
+            }
+            &--small{
+                width: 100%;
+                &in{
+                    margin: 0;
+                }
+                &.left{
+                    float: none;
+                }
+                &.right{
+                    float: none;
+                }
+            }
+            &--oubo{
+                @include var.fz(14);
+                margin-top: 10vw;
+            }
+            &--txt{
+                @include var.fz(14);
+
+                margin: 12px 0 4vw;
+                a{
+                    @include var.fz(14);
+    
+                }
+            }
+
+        }
+    }
+}
+
+
+
+.option{
+    position: relative;
+    background-color: #FFF;
+    padding: 186px 0 126px;
+    &__ttl{
+        @include var.bg;
+        background-image: url(var.$imgpath + 'img_campaign05.svg');
+    }
+
+    .tamimoon__subttl{
+        color: var.$red;
+    }
+    &__txt01{
+        @include var.fz(16);
+        text-align: center;
+        color: var.$blue;
+        margin: 12px auto 30px;
+    }
+    &__txt02{
+        @include var.fz(25);
+        text-align: center;
+        color: var.$blue;
+        margin: 0 auto 30px;
+        line-height: 1;
+        span{
+            @include var.fz(18);
+
+        }
+    }
+    &__img{
+        max-width: 640px;
+        margin: 0 auto 18px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__note{
+        max-width: 640px;
+        margin: 0 auto;
+        @include var.fz(14);
+        text-indent: -1em;
+        padding-left: 1em;
+        line-height: 1.5;
+    }
+    @media screen and (max-width: var.$spbp) {
+        padding: 32vw 0 18vw;
+        &__txt01{
+            @include var.fz(14);
+            margin: 4px auto 16px;
+        }
+        &__txt02{
+            @include var.fz(18);
+            text-align: center;
+            color: var.$blue;
+            margin: 0 auto 22px;
+            line-height: 1;
+            span{
+                @include var.fz(14);
+    
+            }
+        }
+        &__img{
+            max-width: 100%;
+            margin: 0 auto 10px;
+
+        }
+        &__note{
+            max-width: 90%;
+            margin: 0 auto;
+            @include var.fz(11);
+
+        }
+    }
+}

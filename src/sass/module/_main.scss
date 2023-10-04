@@ -1,0 +1,242 @@
+@use "./variable"as var;
+
+@keyframes line{
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+
+.fv {
+    position: relative;
+    width: 38px;
+    height: 155px;
+    margin: 0 auto 20px;
+    &__scroll{
+        @include var.bg;
+        background-image: url('../../img/scroll.svg');
+        width: 9px;
+        height: 49px;
+        position: absolute;
+        right: 0;
+        top: calc(50% - 24px);
+        margin: 0;
+    }
+    &__line{
+        width: 1px;
+        height: 100%;
+        background-color: #FFF;
+        position: absolute;
+        left: 50%;
+        top: 0;
+    	animation: line 2s ease infinite forwards;
+    }
+    //sp
+    @media screen and (max-width: var.$spbp) {
+        width: 7vw;
+        height: 36vw;
+        &__scroll{
+            width: 2vw;
+            height: 12vw;
+            position: absolute;
+            right: 0;
+            top: calc(50% - 6vw);
+            margin: 0;
+        }
+    }
+}
+
+
+
+.about {
+    background: var.$pink;
+    padding: 50px 0 60px;
+    &__ttl{
+        @include var.bg;
+        margin: 0 auto 38px;
+        background-image: url('../../img/ttl_about.svg');
+        width: 162px;
+        height: 42px;
+    }
+    &__txt{
+        font-weight: 700;
+        font-size: 22px;
+        color: #FFF;
+        max-width: 350px;
+        margin: 0 auto 30px; 
+        line-height: 2;
+    }
+    &__img{
+        display: block;
+        width: 312px;
+        height: auto;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: var.$spbp) {
+        padding: 12vw 0 14vw;
+        &__ttl{
+            margin: 0 auto 9vw;
+
+            width: 37.5vw;
+            height: 10vw;
+        }
+        &__txt{
+            font-size: 19px;
+            max-width: 80vw;
+            margin: 0 auto 40px; 
+            line-height: 2;
+        }
+        &__img{
+            display: block;
+            width: 73vw;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+
+.howto {
+    background: var.$blue;
+    padding: 50px 0 60px;
+    &__ttl{
+        @include var.bg;
+        margin: 0 auto 23px;
+        background-image: url('../../img/ttl_howto.svg');
+        width: 162px;
+        height: 42px;
+    }
+    &__txt{
+        font-weight: 700;
+        font-size: 22px;
+        color: #FFF;
+        text-align: center;
+        margin: 0 auto; 
+        line-height: 2;
+    }
+    &__subttl{
+        font-weight: 700;
+        font-size: 16px;
+        color: #FFF;
+        max-width: 320px;
+        margin: 0 auto 56px;
+        text-align: center;
+        line-height: 1;
+        border-top: solid 2px #FFF;
+        border-bottom: solid 2px #FFF;
+        padding: 15px 0;
+
+    }
+    &__img{
+        width: 370px;
+        margin: 0 auto 40px;
+        font-size: 0;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__btn{
+        display: block;
+        margin: 0 auto;
+        width: 364px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+        
+    
+    @media screen and (max-width: var.$spbp) {
+        padding: 12vw 0 14vw;
+        &__ttl{
+            margin: 0 auto 7vw;
+            width: 37.5vw;
+            height: 10vw;
+        }
+        &__txt{
+            font-size: 19px;
+            max-width: 80vw;
+            margin: 0 auto; 
+            line-height: 2;
+        }
+        &__subttl{
+            font-size: 13px;
+            max-width: 74vw;
+            padding: 11px 0;
+            margin: 0 auto 9vw;
+        }
+        &__img{
+            width: 86vw;
+            margin: 0 auto 8vw;
+        }
+        &__btn{
+
+            width: 86vw;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.fvdetails{
+    width: 279px;
+    margin: 0 auto 40px;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    @media screen and (max-width: var.$spbp) {
+        width: 63vw;
+        margin: 0 auto 5.6vw;
+    }
+}
+
+.policy{
+    background: var.$pink;
+    padding: 50px 0 60px; 
+    &__txt{
+        width: 577px;
+        margin: 0 auto 40px;
+        color: #FFF;
+        @include var.fz(16);
+        line-height: 1.8;
+        font-weight: 600;
+
+    }  
+    &__txt2{
+        width: 577px;
+        font-weight: 600;
+        margin: 0 auto 20px;
+        color: #FFF;
+        @include var.fz(16);
+        line-height: 1.8;
+        text-indent: -1em;
+        padding-left: 1em;
+    }  
+    @media screen and (max-width: var.$spbp) {
+        padding: 12vw 0 14vw;
+        &__txt{
+            width: 85vw;
+            margin: 0 auto 8vw;
+            @include var.fz(13);
+            font-weight: 600;
+    
+        }  
+        &__txt2{
+            width: 85vw;
+            margin: 0 auto 4vw;
+            @include var.fz(13);
+
+        }  
+    }
+}

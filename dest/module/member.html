@@ -1,0 +1,120 @@
+<section id="member" class="member">
+    <div class="blc__inner">
+        <div class="load-fade">
+            <div class="scroll-up">
+                <h2 class="member__ttl01">member profile</h2>
+            </div>
+            <div class="scroll-up02">
+                <h2 class="member__ttl02">member profile</h2>
+            </div>
+        </div>
+        <div class="member__inner">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <picture>
+                                <source srcset="./img/img_profile01.webp" type="image/webp">
+                                <img src="./img/img_profile01.png" alt="Ryuji Sato" width="765" height="1125">
+                            </picture>
+                            <div class="member__sns">
+                                <a href="https://twitter.com/ryuji7117" class="member__sns--tw" target="_blank" rel="noopener noreferrer">Twiiter Ryuji Sato</a>
+                                <a href="https://www.instagram.com/ryuji_japan/" class="member__sns--in" target="_blank" rel="noopener noreferrer">insta Ryuji Sato</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <picture>
+                                <source srcset="./img/img_profile02.webp" type="image/webp">
+                                <img src="./img/img_profile02.png" alt="Yuu Fukuzawa" width="765" height="1125">
+                            </picture>
+                            <div class="member__sns">
+                                <a href="https://twitter.com/fukuzawayuu" class="member__sns--tw" target="_blank" rel="noopener noreferrer">Twiiter Yuu Fukuzawa</a>
+                                <a href="https://www.instagram.com/yuu_fukuzawa/" class="member__sns--in" target="_blank" rel="noopener noreferrer">insta Yuu Fukuzawa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <picture>
+                                <source srcset="./img/img_profile03.webp" type="image/webp">
+                                <img src="./img/img_profile03.png" alt="Shinnosuke" width="765" height="1125">
+                            </picture>
+                            <div class="member__sns-three">
+                                <a href="https://twitter.com/_sin_music" class="member__sns--tw" target="_blank" rel="noopener noreferrer">Twiiter Shinnosuke</a>
+                                <a href="https://www.instagram.com/_sin_nico/" class="member__sns--in" target="_blank" rel="noopener noreferrer">insta Shinnosuke</a>
+                                <a href="https://www.youtube.com/@sin7402" class="member__sns--yt" target="_blank" rel="noopener noreferrer">insta Shinnosuke</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <picture>
+                                <source srcset="./img/img_profile04.webp" type="image/webp">
+                                <img src="./img/img_profile04.png" alt="spi" width="765" height="1125">
+                            </picture>
+                            <div class="member__sns">
+                                <a href="https://twitter.com/spi_bot_william" class="member__sns--tw" target="_blank" rel="noopener noreferrer">Twiiter spi</a>
+                                <a href="https://www.instagram.com/william.spearman" class="member__sns--in" target="_blank" rel="noopener noreferrer">insta spi</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="./img/img_member01.webp" type="image/webp">
+                            <img src="./img/img_member01.jpg" alt="Ryuji Sato" width="846" height="192">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="./img/img_member02.webp" type="image/webp">
+                            <img src="./img/img_member02.jpg" alt="Yuu Fukuzawa" width="846" height="192">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="./img/img_member03.webp" type="image/webp">
+                            <img src="./img/img_member03.jpg" alt="Shinnosuke" width="846" height="192">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="./img/img_member04.webp" type="image/webp">
+                            <img src="./img/img_member04.jpg" alt="spi" width="846" height="192">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        direction: "vertical",
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        // zoom: true,
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
+</script>

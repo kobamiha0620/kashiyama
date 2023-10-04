@@ -1,0 +1,36 @@
+$blue: #3B3E57;
+$yel: #F4E603;
+$green: #45AD75;
+$orange: #FFCD7B;
+$pink: #FF90F7;
+$red: #C84565;
+$dyel: #FFF655;
+$bc: #EAEAEF;
+
+$spbp: 750px;
+$tbbp: 640px;
+
+$imgpath : '../img/';
+
+@mixin bg(){
+    background-size: 100% auto;
+    white-space: nowrap;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    display: block;
+}
+@mixin fz($size) {
+	font-size: calc($size / 16) + rem;
+}
+
+@keyframes fadeInAnime{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+

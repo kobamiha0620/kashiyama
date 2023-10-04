@@ -1,0 +1,82 @@
+@use "./module/variable"as var;
+
+@use "./module/*";
+
+.fluidtext{
+	height: 376px; /* 画像の高さを指定 */
+    width: 1920px;
+	background:url(var.$imgpath + 'img_campaign02-figure.png') repeat-x 0 0;
+	background-size: 100% auto;
+	animation: bg-slider 12s linear infinite; /* 23sの部分背景画像の約数だとスムーズ */
+	margin: 32px 0 0;
+	padding: 0;
+}
+@keyframes bg-slider {
+	from { background-position: 0 0; }
+    to { background-position: 1920px 0; } /* 1518pxとは使用した背景画像の長さ */
+}
+
+
+.fluidimg{
+    margin: 32px 0 0;
+    width: 100%;
+    height: 376px; /* 画像の高さ */
+	background:url(var.$imgpath + 'img_campaign02-figure.jpg') ;
+    background-repeat: repeat-x;
+    background-size: auto 376px; /* 画像の高さ */
+    animation: loop 20s linear infinite;
+    @media screen and (max-width: var.$spbp) {
+        height: 270px; /* 画像の高さ */
+        background-size: auto 270px; /* 画像の高さ */
+        animation: loopsp 12s linear infinite;
+        margin: 10vw 0 0;
+
+    }
+}
+
+@keyframes loop {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1920px 0; /* 画像のマイナス幅 */
+    }
+}
+@keyframes loopsp {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1378px 0; /* 画像のマイナス幅 */
+    }
+}
+
+
+
+
+
+
+
+.pc{
+    display: block;
+}
+.sp{
+    display: none;
+}
+@media screen and (max-width: var.$spbp) {
+    .pc{
+        display: none;
+    }
+    .sp{
+        display: block;
+    }
+
+    
+}
+
+
+
+.page-contents.news{
+    max-width: 100%;
+    padding: 0;
+}
