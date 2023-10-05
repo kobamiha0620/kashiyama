@@ -1,0 +1,189 @@
+このzipファイル、及び説明書は、LPに現サイトheader, footerの流用が必須な場合にご利用いただけます。
+header, footerが必要ない完全自由デザインなLP制作には、このテンプレートは不要です。
+
+■■■■■■■■■■■■■■■■■■■■■■■■■
+zip内に格納されているデータ
+■■■■■■■■■■■■■■■■■■■■■■■■■
+[ kashiyama1927.jp ] - ローカル作業用のheader, footerデータを格納しています。必要があればご利用ください。
+[ tpl.html ] - テンプレートファイル。必要があればご利用ください。
+[ tpl説明書-必ずご確認ください.txt ] - tpl内容に関する説明書（本テキスト）
+
+■■■■■■■■■■■■■■■■■■■■■■■■■
+ディレクトリ構成
+■■■■■■■■■■■■■■■■■■■■■■■■■
+kashiyama1927.jp
+ │
+ ├ assets*1 ┬ css ┬ base_21ss.css
+ │          │     └ common.css
+ │          ├ js ┬ libs.js
+ │          │    ├ common_21ss.js
+ │          │    └ main.js
+ │          ├ include ┬ header.html
+ │          │         ├ footer_21ss.html
+ │          │         └ pagetop.html
+ │          ├ font ─ Font Awesome(Brands)
+ │          └ images ─ common ─ logo_kashiyama_black.svg
+ │
+ ├ feature*2 ┬ hogehoge*3 ┬ index.html*4*5
+ │           │            ├ hoge.css*4
+ │           │            ├ hoge.js*4
+ │           │            └ hoge.jpg*4
+ │           │
+ │           └ hoge*3 ┬ index.html
+ │                    ├ css - hoge.css
+ │                    ├ js - hoge.js
+ │                    └ images - hoge.jpg
+ │
+ └ campaign*2 ┬ hogehoge*3 ┬ index.html
+              │            ├ css - hoge.css
+              │            ├ js - hoge.js
+              │            └ images - hoge.jpg
+              └ 以下省略
+
+[*1]
+zipに同梱の[ kashiyama1927.jp ]フォルダに格納されているassetsの大まかな中身です。
+header, footer流用に最低限必要な情報を格納しています。
+assetsの中身は改変しないでください（改変されても反映できません）
+
+[*2]
+基本として、キャンペーンの場合はcampaignフォルダ、特集的な内容はfeatureフォルダへ格納されます。
+「どちらにも該当しない、別の設定がどうしても必要だ」という場合は担当までご相談ください。
+
+[*3]
+上記の[*2]配下にLP毎のフォルダを格納します。
+URL未定で作業進行されている場合は、納品後に適宜処理することも可能ですが、万が一ルートパスを利用される場合はご注意ください。
+とくにcssやjs内にルートパス記述がある場合の不具合は、再納品をお願いする形になります。
+フォルダ名に関して、重複の確認が必要な場合はご連絡ください。
+
+[*4]
+LPデータ（index.html）含め、css、js、imagesなど必要な全てのデータを１つのフォルダに格納してください。
+格納フォルダ内でのフォルダ生成（さらなる下層ディレクトリの生成）は自由に行ってください。
+名称に特別な決まりはありませんが、公序良俗には反しないようお願いします。
+
+[*5]
+本サイトはレスポンシブで制作されています。ユーザーエージェント切り替え等はありません。
+
+[注意]
+hoge, hogehogeは仮充ての名称です。これに従うものではなく、必ず任意で変更してください。
+
+■■■■■■■■■■■■■■■■■■■■■■■■■
+tpl.html 各記述説明
+■■■■■■■■■■■■■■■■■■■■■■■■■
+4行目
+<meta charset="shift_jis">
+
+サイトのエンコードは、shift-jisとなっておりますのでお気をつけください。
+他エンコードはサーバーの仕様上、設定できません。
+また、htmlファイル自体もshift-jisエンコードでの保存をお願いいたします。
+
+────────────
+6行目
+<title>タイトル入力 | オーダースーツのKASHIYAMA</title>
+
+「タイトル入力」箇所にLPタイトルを記載してください。それ以降の「 | オーダースーツのKASHIYAMA」は改変しないでください。
+
+────────────
+7行目
+<meta name="description" content="説明文入力 | 「KASHIYAMA the Smart Tailor」なら～
+
+「説明文入力」箇所に必要な内容を記載してください。それ以降は改変しないでください。
+
+────────────
+11行目
+<meta property="og:title" content="タイトル入力 | オーダースーツのKASHIYAMA">
+
+「タイトル入力」箇所にLPタイトルを記載してください。それ以降の「 | オーダースーツのKASHIYAMA」は改変しないでください。
+
+────────────
+12行目
+<meta property="og:description" content="説明文入力 ">
+
+「説明文入力」箇所に必要な内容を記載してください。
+
+────────────
+13行目
+<meta property="og:url" content="https://kashiyama1927.jp/campaign/hogehoge/">
+
+LP格納フォルダの名称を記載してください。
+URLが未定の場合は、こちらで修正しますのでそのままご提出ください。
+
+────────────
+15行目
+<meta property="og:image" content="https://kashiyama1927.jp/campaign/hogehoge/images/ogp.jpg">
+
+ogp画像のパスをご記入ください。
+URLが未定の場合は、こちらで修正しますのでogp画像ファイル名だけをご指定願います。
+
+────────────
+35 - 36行目
+<!-- WEB FONT -->
+
+このサイトにはweb fontが設定されています。この記述は消さないでください。
+和文は、「FOT-セザンヌ Pro M」「FOT-セザンヌ Pro DB」の二種、英文は「sweet-sans-pro」です。
+詳しくは現サイトをご確認いただき、ご不明な点があればご連絡ください。
+
+FOT-セザンヌ Pro M
+FOT-セザンヌ Pro DB
+sweet-sans-pro
+
+なお、web fontはkashiyamaサーバーのstg/prd環境のみで表示され、外部環境では反応しません。
+ローカル作業での表示は制作側にて適宜ご対応ください。
+また、作業途中での体裁・反応確認を行いたい場合は、担当にご相談いただければ仮反映を行います。
+
+────────────
+41行目
+<link rel="stylesheet" href="./css/hoge.css">
+
+サイトルートパスでの記述も可能ですが、ディレクトリ未定のまま進行する場合は、相対パスでの記述をお願いします。
+「base_21ss.css」「common.css」は必須cssのため削除しないでください。
+
+────────────
+43 - 51行目
+<!-- Google Tag Manager-->
+
+kashiyamaサイトで利用しているGTM記述のため、改変や削除はしないでください。
+何か実装上で不具合がある場合はご連絡ください。
+
+────────────
+88 - 90行目
+<div class="page-contents">
+  <!-- 自由入力エリア -->
+</div>
+
+「class="page-contents"」が指定されている<div>内に、LPの制作を行ってください。
+.page-contentsにもスタイルが設定されているため、このclassは削除しないでください。
+
+────────────
+85行目
+<?php include $_SERVER['DOCUMENT_ROOT']."/assets/include/header.html";?>
+
+96行目
+<?php include $_SERVER['DOCUMENT_ROOT']."/assets/include/footer_21ss.html";?>
+
+header, footerはphpにてincludeされています。
+ローカル作業用にheaderとfooterのhtmlデータ（assets）をお渡ししますが、納品時のheader, footer記述は上記でご提出ください。
+
+────────────
+92行目
+<?php include $_SERVER['DOCUMENT_ROOT']."/assets/include/pagetop.html";?>
+
+ページトップに戻るボタンは全頁共通で上記をincludeしています。
+ローカル作業用にデータをお渡ししますが、納品時は上記でご提出ください。
+制作上、どうしても不要な場合（別デザインの戻るボタンを指定された等）は、削除しても問題ありません。
+
+────────────
+103行目
+<script src="./js/hoge.js" charset="utf-8"></script>
+
+個別のjsを設定する場合は、head内ではなく、</body>前へリンク記述をお願いします。
+css同様、サイトルートパスでの記述も可能ですが、ディレクトリ未定のまま進行する場合は、相対パスでの記述をお願いします。
+「libs.js」「main.js」「common_21ss.js」は必須ファイルのため削除しないでください。
+
+[ jsについて ]
+jQueryを利用する場合、「libs.js」と異なるverの利用は、競合が起きないように設置処理を行ってください。
+自設置のjsについては、コンソールエラーが出てないことを確認の上で納品してください。
+
+────────────
+
+以上になります。
+ご不明な点はお問い合わせください。

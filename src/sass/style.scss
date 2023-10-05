@@ -80,3 +80,28 @@
     max-width: 100%;
     padding: 0;
 }
+@media screen and (max-width: var.$spbp) {  
+    .package__btns{
+        a{
+            &:hover{
+                background-size: 100% auto;
+
+            }
+        }
+    }
+    .closet{
+        &:hover{
+            background: url(var.$imgpath + 'btn_campaign03-b-sp.png') no-repeat 0 0;
+            background-size: 100% auto;
+            transition: .3s;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            padding-top: 19%;
+        width: 100%;
+        background-size: 100% auto;
+
+
+        }
+    }
+
+}

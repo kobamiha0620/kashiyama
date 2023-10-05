@@ -320,7 +320,7 @@
             background: url(var.$imgpath + 'campaign03_fukidashi-sp.svg') no-repeat 0 0;
             background-size: 100% auto;
             border-bottom: solid 1.3px var.$blue;
-            padding: 34px 0 14px;
+            padding: 10vw 0 4vw!important;
             &--txt{
                 @include var.fz(14);
             }
@@ -357,7 +357,12 @@
                     padding-top: 19%;
                     &:hover{
                         background: url(var.$imgpath + 'btn_campaign03-b-sp.png') no-repeat 0 0;
-    
+                        background-size: 100% auto;
+                        transition: .3s;
+                        background-size: 100% auto;
+                        padding-top: 19%;
+                    width: 100%;
+
                     }
                 }
             }

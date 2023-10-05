@@ -1,0 +1,54 @@
+改修履歴（kashiyama_lp_tpl_ver.22ss_20220419.zip以降）
+過去のtplデータを持っている、使っているかた向けの改修履歴書です。
+過去のtpl等のどこが改修されたかを確認いただけます
+
+2022/0520 改変内容
+────────────
+tpl説明書-必ずご確認ください.txt
+141 - 145行目
+GTMタグに関する説明文を加筆
+────────────
+
+2023/0302 改変内容
+────────────
+※tpl説明書-必ずご確認ください.txt
+7行目
+格納データ説明内のファイル名称変更
+17, 21行目
+ディレクトリ構成内のファイル名称変更
+44行目
+説明内のフォルダ名称変更
+138行目
+必須cssのファイル名称変更
+154行目
+.page-contentsクラスに関する加筆
+158行目
+php includeのファイル名称変更
+178行目
+説明内の/body表記を</body>に修正
+
+※tpl.html
+40行目
+common_21ss.css を common.css に変更
+85行目
+header_21ss.html を header.html に変更
+
+※kashiyama1927.jpフォルダ内
+assets/css/common_21ss.css を削除
+assets/css/common.css を追加
+assets/images/common/arrow-black6.svg を追加
+assets/include/header_21ss.html を削除
+assets/include/header.html を追加
+assets/js/common_21ss.js を現行に更新
+assets/js/libs.js を現行に更新
+assets/js/main.js を現行に更新
+────────────
+
+2023/0803 改変内容
+────────────
+※kashiyama1927.jpフォルダ内
+assets/css/cbase_21ss.css を更新
+assets/css/common.css を更新
+assets/images/common/に矢印系のsvgを何点か追加
+assets/include/header.html を更新
+────────────

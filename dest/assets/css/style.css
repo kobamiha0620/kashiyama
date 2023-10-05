@@ -311,7 +311,7 @@
     background: url("../img/campaign03_fukidashi-sp.svg") no-repeat 0 0;
     background-size: 100% auto;
     border-bottom: solid 1.3px #3B3E57;
-    padding: 34px 0 14px;
+    padding: 10vw 0 4vw !important;
   }
   .package__fukidashi--txt {
     font-size: 0.875rem;
@@ -349,6 +349,11 @@
   }
   .package__btns li a.closet:hover {
     background: url("../img/btn_campaign03-b-sp.png") no-repeat 0 0;
+    background-size: 100% auto;
+    transition: 0.3s;
+    background-size: 100% auto;
+    padding-top: 19%;
+    width: 100%;
   }
   .package__tshirt {
     display: flex;
@@ -738,197 +743,6 @@
   }
   .cloth__person--price span {
     font-size: 0.625rem;
-  }
-}
-
-.package {
-  position: relative;
-  background-color: #FFF;
-  padding: 186px 0 126px;
-}
-.package__ttl {
-  background-size: 100% auto;
-  white-space: nowrap;
-  text-indent: -9999px;
-  background-repeat: no-repeat;
-  display: block;
-  background-image: url("../img/img_campaign03.svg");
-}
-.package__img {
-  margin: 28px auto 18px;
-}
-.package__img img {
-  width: 100%;
-  height: auto;
-}
-.package__fukidashi {
-  background: url("../img/campaign03_fukidashi-pc.svg") no-repeat 0 0;
-  background-size: 100% auto;
-  border-bottom: solid 1px #3B3E57;
-  padding: 55px 0 25px;
-}
-.package__fukidashi--txt {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #3B3E57;
-}
-.package__btns {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 18px 0 47px;
-}
-.package__btns li {
-  width: 310px;
-  min-width: 310px;
-}
-.package__btns li a.site {
-  white-space: nowrap;
-  text-indent: -9999px;
-  background-size: 100% auto;
-  width: 100%;
-  background: url("../img/btn_campaign03-a.png") no-repeat 0 0;
-  background-size: 100% auto;
-  transition: 0.3s;
-  display: block;
-  width: 310px;
-  height: 56px;
-}
-.package__btns li a.site:hover {
-  background: url("../img/btn_campaign03-ahover.png") no-repeat 0 0;
-  transition: 0.3s;
-  background-size: 100% auto;
-}
-.package__btns li a.closet {
-  white-space: nowrap;
-  text-indent: -9999px;
-  background-size: 100% auto;
-  width: 100%;
-  background: url("../img/btn_campaign03-b.png") no-repeat 0 0;
-  background-size: 100% auto;
-  transition: 0.3s;
-  display: block;
-  width: 310px;
-  height: 56px;
-}
-.package__btns li a.closet:hover {
-  background: url("../img/btn_campaign03-bhover.png") no-repeat 0 0;
-  transition: 0.3s;
-  background-size: 100% auto;
-}
-.package__tshirt {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
-}
-.package__tshirt li {
-  width: 200px;
-  max-width: 200px;
-  min-width: 200px;
-  font-size: 0;
-  margin: 0 0 20px;
-}
-.package__tshirt li img {
-  width: 100%;
-  height: auto;
-}
-.package__details {
-  border: solid 1px #AFB8C5;
-  padding: 22px 20px 9px;
-  display: inline-block;
-  float: right;
-}
-.package__details--wrap {
-  overflow: hidden;
-  display: block;
-}
-.package__details--txt {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin: 0 0 13px;
-  color: #3B3E57;
-}
-.package__details--txt2 {
-  font-size: 0.875rem;
-  line-height: 1.4;
-  margin: 0 0 13px;
-  color: #3B3E57;
-  padding-left: 14px;
-  text-indent: -14px;
-}
-.package__details--txt2 span {
-  font-size: 0.75rem;
-}
-@media screen and (max-width: 750px) {
-  .package {
-    padding: 32vw 0 18vw;
-  }
-  .package__img {
-    margin: 28px -15px 0 -25px;
-  }
-  .package__fukidashi {
-    margin-top: 18px;
-    background: url("../img/campaign03_fukidashi-sp.svg") no-repeat 0 0;
-    background-size: 100% auto;
-    border-bottom: solid 1.3px #3B3E57;
-    padding: 34px 0 14px;
-  }
-  .package__fukidashi--txt {
-    font-size: 0.875rem;
-  }
-  .package__btns {
-    display: block;
-    margin: 18px 0 40px;
-  }
-  .package__btns li {
-    width: 100%;
-    min-width: 100%;
-  }
-  .package__btns li a.site {
-    width: 100%;
-    background: url("../img/btn_campaign03-a-sp.png") no-repeat 0 0;
-    background-size: 100% auto;
-    transition: 0.3s;
-    display: block;
-    width: 100%;
-    height: 0;
-    padding-top: 15%;
-  }
-  .package__btns li a.site:hover {
-    background: url("../img/btn_campaign03-a-sp.png") no-repeat 0 0;
-    transition: 0.3s;
-    background-size: 100% auto;
-  }
-  .package__btns li a.closet {
-    margin-top: 10px;
-    width: 100%;
-    background: url("../img/btn_campaign03-b-sp.png") no-repeat 0 0;
-    background-size: 100% auto;
-    height: 0;
-    padding-top: 19%;
-  }
-  .package__btns li a.closet:hover {
-    background: url("../img/btn_campaign03-b-sp.png") no-repeat 0 0;
-  }
-  .package__tshirt {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .package__tshirt li {
-    width: 48%;
-    max-width: 48%;
-    min-width: 48%;
-    font-size: 0;
-    margin: 0 0 3.8vw;
-  }
-  .package__details {
-    padding: 22px 20px 9px;
-    display: inline-block;
-    float: none;
-    width: 100%;
   }
 }
 
@@ -1916,4 +1730,20 @@
 .page-contents.news {
   max-width: 100%;
   padding: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .package__btns a:hover {
+    background-size: 100% auto;
+  }
+  .closet:hover {
+    background: url("../img/btn_campaign03-b-sp.png") no-repeat 0 0;
+    background-size: 100% auto;
+    transition: 0.3s;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    padding-top: 19%;
+    width: 100%;
+    background-size: 100% auto;
+  }
 }
