@@ -462,3 +462,41 @@
         }
     }
 }
+
+//追記1031
+@media screen and (max-width: var.$spbp) {
+    .tamiintro__kashiyama--img{
+        margin: 0 -3%;
+    }
+}
+
+
+.limited__addcam{
+    margin: 80px auto 80px;
+    max-width: 560px;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    @media screen and (max-width: var.$spbp) {
+        max-width: 80%;
+        margin: 0 auto 10vw;
+    }
+}
+.limited__poster{
+    margin-top: 144px;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    @media screen and (max-width: var.$spbp) {
+        margin: 12vw auto 0;
+
+    }
+}
+
+.limited__blc--txt{
+    span{
+        color: var.$red;
+    }
+}
