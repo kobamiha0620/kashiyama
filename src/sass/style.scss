@@ -3,31 +3,31 @@
 @use "./module/*";
 
 .fluidtext{
-	height: 376px; /* 画像の高さを指定 */
+	height: 376px; /* ??????????w?? */
     width: 1920px;
 	background:url(var.$imgpath + 'img_campaign02-figure.png') repeat-x 0 0;
 	background-size: 100% auto;
-	animation: bg-slider 12s linear infinite; /* 23sの部分背景画像の約数だとスムーズ */
+	animation: bg-slider 12s linear infinite; /* 23s??????w?i????????X???[?Y */
 	margin: 32px 0 0;
 	padding: 0;
 }
 @keyframes bg-slider {
 	from { background-position: 0 0; }
-    to { background-position: 1920px 0; } /* 1518pxとは使用した背景画像の長さ */
+    to { background-position: 1920px 0; } /* 1518px???g?p?????w?i??????? */
 }
 
 
 .fluidimg{
     margin: 32px 0 0;
     width: 100%;
-    height: 376px; /* 画像の高さ */
-	background:url(var.$imgpath + 'img_campaign02-figure.jpg') ;
+    height: 376px; /* ??????? */
+	background:url(var.$imgpath + 'img_campaign02-figure-mod.jpg') ;
     background-repeat: repeat-x;
-    background-size: auto 376px; /* 画像の高さ */
+    background-size: auto 376px; /* ??????? */
     animation: loop 20s linear infinite;
     @media screen and (max-width: var.$spbp) {
-        height: 270px; /* 画像の高さ */
-        background-size: auto 270px; /* 画像の高さ */
+        height: 270px; /* ??????? */
+        background-size: auto 270px; /* ??????? */
         animation: loopsp 12s linear infinite;
         margin: 10vw 0 0;
 
@@ -39,7 +39,7 @@
         background-position: 0 0;
     }
     to {
-        background-position: -1920px 0; /* 画像のマイナス幅 */
+        background-position: -1920px 0; /* ????}?C?i?X?? */
     }
 }
 @keyframes loopsp {
@@ -47,7 +47,7 @@
         background-position: 0 0;
     }
     to {
-        background-position: -1378px 0; /* 画像のマイナス幅 */
+        background-position: -1378px 0; /* ????}?C?i?X?? */
     }
 }
 
@@ -105,3 +105,11 @@
     }
 
 }
+p.tamimoon__leadText {
+    color: #3B3E57;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    width: 80%;
+    margin: 15px auto 0;
+    text-align: center;
+  }

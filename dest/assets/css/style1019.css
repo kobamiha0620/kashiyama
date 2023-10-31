@@ -1659,11 +1659,11 @@
 }
 
 .fluidtext {
-  height: 376px; /* �摜�̍������w�� */
+  height: 376px; /* ??????????w?? */
   width: 1920px;
   background: url("../img/img_campaign02-figure.png") repeat-x 0 0;
   background-size: 100% auto;
-  animation: bg-slider 12s linear infinite; /* 23s�̕����w�i�摜�̖񐔂��ƃX���[�Y */
+  animation: bg-slider 12s linear infinite; /* 23s??????w?i????????X???[?Y */
   margin: 32px 0 0;
   padding: 0;
 }
@@ -1674,21 +1674,21 @@
   }
   to {
     background-position: 1920px 0;
-  } /* 1518px�Ƃ͎g�p�����w�i�摜�̒��� */
+  } /* 1518px???g?p?????w?i??????? */
 }
 .fluidimg {
   margin: 32px 0 0;
   width: 100%;
-  height: 376px; /* �摜�̍��� */
+  height: 376px; /* ??????? */
   background: url("../img/img_campaign02-figure-mod.jpg");
   background-repeat: repeat-x;
-  background-size: auto 376px; /* �摜�̍��� */
+  background-size: auto 376px; /* ??????? */
   animation: loop 20s linear infinite;
 }
 @media screen and (max-width: 750px) {
   .fluidimg {
-    height: 270px; /* �摜�̍��� */
-    background-size: auto 270px; /* �摜�̍��� */
+    height: 270px; /* ??????? */
+    background-size: auto 270px; /* ??????? */
     animation: loopsp 12s linear infinite;
     margin: 10vw 0 0;
   }
@@ -1699,7 +1699,7 @@
     background-position: 0 0;
   }
   to {
-    background-position: -1920px 0; /* �摜�̃}�C�i�X�� */
+    background-position: -1920px 0; /* ????}?C?i?X?? */
   }
 }
 @keyframes loopsp {
@@ -1707,7 +1707,7 @@
     background-position: 0 0;
   }
   to {
-    background-position: -1378px 0; /* �摜�̃}�C�i�X�� */
+    background-position: -1378px 0; /* ????}?C?i?X?? */
   }
 }
 .pc {
@@ -1745,4 +1745,12 @@
     width: 100%;
     background-size: 100% auto;
   }
+}
+p.tamimoon__leadText {
+  color: #3B3E57;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  width: 80%;
+  margin: 15px auto 0;
+  text-align: center;
 }
